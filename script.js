@@ -14,7 +14,6 @@ function deleteLast() {
 function calculate() {
     let expression = document.getElementById("display").value;
 
-    // Replace display-friendly function names with JavaScript functions
     expression = expression.replace(/sin\(/g, "Math.sin(");
     expression = expression.replace(/cos\(/g, "Math.cos(");
     expression = expression.replace(/tan\(/g, "Math.tan(");
